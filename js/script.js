@@ -11,7 +11,7 @@ if (localStorage.getItem('myBookmark')) {
 function mainBookMark() {
     addBookmark();
     displayBookMark();
-    // clear();
+    clear();
 };
 
 /** this function to take value from user and push to arraylist */
