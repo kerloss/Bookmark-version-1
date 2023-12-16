@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <title>Bookmark</title>
+    <link rel="shortcut icon" href="image/bookmark-5-xxl.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container d-flex flex-column">
+        <div class="header py-5 d-flex justify-content-center position-relative">
+            <h1 class="py-2 position-relative">Bookmarker</h1>
+        </div>
+        <div class="title py-4">
+            <div class="bookmark-body d-flex flex-column align-items-center">
+                <h2>
+                    <i class="fa-solid fa-bookmark"></i>
+                    Bookmark your favorite sites
+                    <i class="fa-solid fa-bookmark"></i>
+                </h2>
+            </div>
+            <div class="site-name my-4">
+                <label class="pb-2 fw-semibold">
+                    <i class="fa-solid fa-book-bookmark pe-2"></i>
+                    Site Name :
+                </label>
+                <input type="text" name="Bookmark Name" id="bookMarkName" class="form-control"
+                    placeholder="Bookmark Name" title="must contain at least 3 character">
+            </div>
+            <div class="site-url">
+                <label class="pb-2 fw-semibold">
+                    <i class="fa-solid fa-link pe-2"></i>
+                    Site URL :
+                </label>
+                <input type="url" name="site url" id="siteURL" class="form-control" placeholder="Website URL"
+                    title="website must end with .com">
+            </div>
+            <div class="button d-flex justify-content-center">
+                <button onclick="mainBookMark()" class="btn btn-outline-danger px-5 mt-4">Submit</button>
+            </div>
+        </div>
+        <table class="table mt-4 text-center">
+            <thead>
+                <tr>
+                    <th>Index</th>
+                    <th>Website name</th>
+                    <th>Website URL</th>
+                    <th>Visit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="tableContact">
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
